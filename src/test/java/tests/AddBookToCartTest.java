@@ -26,7 +26,7 @@ public class AddBookToCartTest {
     public void verifyCheckout()  {
 
         homePage.addBookToCart();
-        Assert.assertEquals(homePage.checkCart(),"1 X THE BIG SWTCH","Book is not added to cart");
+        Assert.assertEquals(homePage.checkCart(),"1 X THE BIG SWITCH","Book is not added to cart");
     }
 
     @AfterTest(enabled = true)
