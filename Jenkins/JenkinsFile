@@ -1,0 +1,18 @@
+pipeline {
+
+    agent any
+
+    tools {
+        maven 'maven'
+    }
+
+    stages {
+
+        stage ('Run Functional Tests'){
+
+            sh 'mvn clean surefire-report:report'
+        }
+
+        stage ('Archive Test Report')
+    }
+}

@@ -3,6 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/assignment.iml" filepath="$PROJECT_DIR$/assignment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shopizer/shop_functional/shop_functional.iml" filepath="$PROJECT_DIR$/../shopizer/shop_functional/shop_functional.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shopizer/shopizer.iml" filepath="$PROJECT_DIR$/../shopizer/shopizer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shopizer/sm-core/sm-core.iml" filepath="$PROJECT_DIR$/../shopizer/sm-core/sm-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shopizer/sm-core-model/sm-core-model.iml" filepath="$PROJECT_DIR$/../shopizer/sm-core-model/sm-core-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shopizer/sm-core-modules/sm-core-modules.iml" filepath="$PROJECT_DIR$/../shopizer/sm-core-modules/sm-core-modules.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shopizer/sm-shop/sm-shop.iml" filepath="$PROJECT_DIR$/../shopizer/sm-shop/sm-shop.iml" />
     </modules>
   </component>
 </project>

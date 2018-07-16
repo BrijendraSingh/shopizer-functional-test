@@ -7,10 +7,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="assignment" />
+        <module name="shop_functional" />
+        <module name="sm-core" />
+        <module name="sm-core-model" />
+        <module name="sm-core-modules" />
+        <module name="sm-shop" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="assignment" target="1.8" />
+      <module name="shop_functional" target="1.8" />
+      <module name="shopizer" target="1.8" />
+      <module name="sm-core" target="1.8" />
+      <module name="sm-core-model" target="1.8" />
+      <module name="sm-core-modules" target="1.8" />
+      <module name="sm-shop" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
