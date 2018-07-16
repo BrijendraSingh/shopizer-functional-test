@@ -20,7 +20,7 @@ pipeline {
 
             steps {
                 echo 'Now Archiving ..'
-                archiveArtifacts artifacts: 'target/surefire-reports, emailable-report.html'
+                archiveArtifacts artifacts: 'target/surefire-reports/emailable-report.html'
             }
         }
     }
