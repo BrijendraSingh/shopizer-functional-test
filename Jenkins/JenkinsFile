@@ -23,8 +23,9 @@ pipeline {
 //                archiveArtifacts artifacts: 'target/surefire-reports/emailable-report.html'
 //            }
 //        }
+        publishers {
+            archiveTestNG('target/surefire-reports/*.xml')
+        }
     }
-    publishers {
-        archiveTestNG('target/surefire-reports/*.xml')
-    }
+
 }
