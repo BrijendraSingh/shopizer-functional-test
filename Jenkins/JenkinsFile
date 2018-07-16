@@ -14,6 +14,8 @@ pipeline {
                 sh 'mvn clean surefire-report:report'
             }
 
+            step([$class: 'Publisher', reportFilenamePattern: 'target/surefire-reports/testng-results.xml'])
+
         }
 
 //        stage('Archive Test Report') {
@@ -23,9 +25,7 @@ pipeline {
 //                archiveArtifacts artifacts: 'target/surefire-reports/emailable-report.html'
 //            }
 //        }
-        publishers {
-            archiveTestNG('target/surefire-reports/*.xml')
-        }
+
     }
 
 }
