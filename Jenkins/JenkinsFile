@@ -12,20 +12,17 @@ pipeline {
 
             steps {
                 sh 'mvn clean surefire-report:report'
-                step([$class: 'Publisher', reportFilenamePattern: 'target/surefire-reports/testng-results.xml'])
+
             }
-
-           
-
         }
 
-//        stage('Archive Test Report') {
-//
-//            steps {
-//                echo 'Now Archiving ..'
-//                archiveArtifacts artifacts: 'target/surefire-reports/emailable-report.html'
-//            }
-//        }
+        stage('Publish Test Report') {
+
+            steps {
+                echo 'Publishing Report ..'
+                step([$class: 'Publisher', reportFilenamePattern: 'target/surefire-reports/testng-results.xml'])
+            }
+        }
 
     }
 
