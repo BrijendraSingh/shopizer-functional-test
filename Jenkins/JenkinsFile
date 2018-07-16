@@ -11,7 +11,7 @@ pipeline {
         stage('Run Functional Tests') {
 
             steps {
-                sh 'mvn clean surefire-report:report'
+                sh 'mvn clean test'
 
             }
         }
