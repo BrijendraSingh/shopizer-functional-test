@@ -16,12 +16,15 @@ pipeline {
 
         }
 
-        stage('Archive Test Report') {
-
-            steps {
-                echo 'Now Archiving ..'
-                archiveArtifacts artifacts: 'target/surefire-reports/emailable-report.html'
-            }
-        }
+//        stage('Archive Test Report') {
+//
+//            steps {
+//                echo 'Now Archiving ..'
+//                archiveArtifacts artifacts: 'target/surefire-reports/emailable-report.html'
+//            }
+//        }
+    }
+    publishers {
+        archiveTestNG('target/surefire-reports/*.xml')
     }
 }
