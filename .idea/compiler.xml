@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="assignment" />
-        <module name="shop_functional" />
         <module name="sm-core" />
         <module name="sm-core-model" />
         <module name="sm-core-modules" />
